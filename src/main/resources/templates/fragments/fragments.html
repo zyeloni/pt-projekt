@@ -1,0 +1,24 @@
+<div class="container" th:fragment="navigation">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">E-weterynarz</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" th:href="@{/}">Strona główna</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:href="@{/visits/index}">Wizyty</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<div class="footer" th:fragment="footer">
+    <div class="container">
+        2021 &copy; Kacper Lukasik E-weterynarz
+    </div>
+</div>
